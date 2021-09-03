@@ -1,0 +1,22 @@
+﻿@model ErpProductDTO
+@{
+    ViewBag.Title = "ProductResult";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var variants = ViewBag.variants as List<ItemVariant>;
+}
+<h1>product result</h1>
+
+<div class="container">
+
+    <label>@Model.displayName</label>
+    <br />
+
+    <b>Properties</b>
+    
+    @foreach (var item in variants)
+    {
+        <div class="row">
+            <label>@item.code</label>:  <label>@item.description</label>
+        </div>
+    }
+</div>
