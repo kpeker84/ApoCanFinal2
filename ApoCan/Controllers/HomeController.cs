@@ -136,7 +136,22 @@ namespace ApoCan.Controllers
             IRestResponse response = client.Execute(request);
             var tempResponse = JsonConvert.DeserializeObject<ErpBaseResponse<ItemVariant>>(response.Content);
             var variants = tempResponse.value;
+
+
+            var imageLink = GetItemPicture(id);
+            ViewBag.imageLink = imageLink;
             return variants;
+        }
+
+        public string GetItemPicture(string id)
+        {
+            var client = new RestClient($"https://api.businesscentral.dynamics.com/v2.0/d997d32d-0bb9-49fb-8882-dded649bae98/APOCAN_Test/api/v2.0/companies(54a794bd-ddf5-eb11-a1de-0022485b536e)/items({id})/picture");
+            client.Timeout = -1;
+            var request = new RestRequest(Method.GET);
+            request.AddHeader("Authorization", "Basic a3BlY2tlcjpmVWNEeUdGUkl6TFlraTBLUkQyZE10cGZTS0ZzL0krcUcyQjlCSXRoaTA0PQ==");
+            IRestResponse response = client.Execute(request);
+            var tempResponse = JsonConvert.DeserializeObject<ErpProductImageModel>(response.Content);
+            return tempResponse.mediaReadLink;
         }
 
     }

@@ -3,14 +3,16 @@
     ViewBag.Title = "ProductResult";
     Layout = "~/Views/Shared/_Layout.cshtml";
     var variants = ViewBag.variants as List<ItemVariant>;
+    var imageLink = ViewBag.imageLink as string;
 }
-<h1>product result</h1>
 
-<div class="container">
+<div style="margin-top:200px">
 
     <label>@Model.displayName</label>
     <br />
-
+    <label>IMAGE</label>
+    <br />
+    <img src="@imageLink" style="max-width:300px;max-height:600px">
     <b>Properties</b>
     
     @foreach (var item in variants)

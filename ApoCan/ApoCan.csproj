@@ -137,6 +137,7 @@
     <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\ErpBaseResponse.cs" />
     <Compile Include="Models\ErpProductDTO.cs" />
+    <Compile Include="Models\ErpProductImageModel.cs" />
     <Compile Include="Models\ItemVariant.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
