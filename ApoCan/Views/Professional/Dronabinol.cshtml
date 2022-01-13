@@ -10,11 +10,12 @@
     <meta charset="utf-8">
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
     <link href="~/css/theme-charcoal.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/css/flickity.css" rel="stylesheet" type="text/css" media="all" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
 
 </head>
@@ -31,6 +32,26 @@
                 </div>
             </div>
         </section>
+        @*<section class="text-center space--xs bg--primary-1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-lg-6">
+                            <div class="cta">
+                                <h2>Zurück zur Übersicht</h2> <a class="btn btn--primary type--uppercase" href="@Url.RouteUrl("ProfessionalMain")">
+                                    <span class="btn__text">fachbereıch<br></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>*@
+        <section class="text-center cta cta-4 space--xxs border--bottom bg--primary-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12"> <span class="label label--inline bg--primary">FACHBEREICH</span> <span>Zurück zur <a href="@Url.RouteUrl("ProfessionalMain")">Übersicht</a></span> </div>
+                </div>
+            </div>
+        </section>
         <section class="text-center bg--secondary">
             <div class="container">
                 <div class="row">
@@ -38,62 +59,59 @@
                         <div class="tabs-container" data-content-align="left">
                             <ul class="tabs">
                                 <li class="active">
-                                    <div class="tab__title"> <span class="h5">250mg</span></div>
+                                    <div class="tab__title"> <span class="h5">250 mg</span></div>
                                     <div class="tab__content">
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col-lg-4">
-                                                    <div class="text-block text-center">
-                                                        <h3><b>250mg Dronabinol</b></h3>
-                                                    </div>
                                                     <div class="col-md-7 col-lg-12">
-                                                        <div class="slider border--round boxed--border" data-timing="5000" data-paging="true" data-arrows="true">
+                                                        <div class="slider border--round boxed--border" data-timing="5000" data-paging="true">
                                                             <ul class="slides">
-                                                                <li> <img alt="Image" src="~/img/Products/Dronabinol-1.jpg"> </li>
-                                                                <li> <img alt="Image" src="~/img/Products/Dronabinol-2.jpg"> </li>
+                                                                <li> <img alt="Image" src="~/img/Product/dronabinol Front all same new.jpg"> </li>
+                                                                <li> <img alt="Image" src="~/img/Product/dronabinol back 250 sml.jpg"> </li>
+                                                                <li> <img alt="Image" src="~/img/Product/syringe1.jpg"> </li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-5">
                                                     <div class="text-block">
-                                                        <h5>APOCAN 250mg Dronabinol wird in einer Spritze geliefert. </h5>
+                                                        <h3><b>APOCAN DRONABINOL DAC 250 mg</b></h3>
+                                                        <h3 class="color--googleplus"><b>Erhältlich in Q1 2022</b></h3>
                                                         @*<p> Open a <a href="#">refund request</a> with us and we can work with you to resolve it ASAP. </p>*@
                                                     </div>
                                                     <div class="text-block">
                                                         @*<h5>Can I pay using AMEX?</h5>*@
                                                         <ul>
-                                                            <li><p><b>PZN:</b> 16767353 </p></li>
-                                                            <li><p><b>Haltbarkeit:</b> 9 Monate </p></li>
-                                                            <li><p><b>Inhalt:</b> 250mg </p></li>
-                                                            <li><p><b>Wirkstoffmenge:</b> 250mg THC </p></li>
+                                                            <li><p><b>PZN:</b> 17866732 </p></li>
+                                                            <li><p><b>Typ:</b> Wirkstoff </p></li>
+                                                            <li><p><b>Wirkstoffmenge:</b> 250 mg (–)-trans-Δ9- Tetrahydrocannabinol </p></li>
+                                                            <li><p><b>Inhalt:</b> Borosilikatglasspritze mit 250 mg Dronabinol, Analysezertifikat </p></li>
+                                                            <li><p><b>Haltbarkeit:</b> ca. 12 Monate </p></li>
+                                                            <li><p><b>Herkunft:</b> Niederlande </p></li>
                                                             <li>&nbsp;</li>
-                                                            <li><p><b>AEK:</b> 00,00€ </p></li>
+                                                            <li><p><b>AEK:</b> siehe Lauer-Taxe </p></li>
                                                         </ul>
+                                                    </div>
+                                                    <div class="text-block">
+                                                        <h5>
+                                                            Das von APOCAN angebotene DAC konforme Dronabinol ist das isolierte Haupt-Cannabinoid aus der Cannabispflanze, Δ9-THC. Die Viskosität des Harzes wird mit Hilfe von Wärme auf ein Niveau gebracht, mit dem sich Dronabinol leicht zu Kapseln, Ölen und ethanolischen Lösungen verarbeiten lässt. Bei der Verarbeitung helfen Ihnen die NRF Vorschriften 22.7. , 22.8. und 22.16..
+                                                            Unser Dronabinol stammt aus den Niederlanden und wird von Experten unter EU-GMP Richtlinien raffiniert und verpackt, um für Sie eine gleichbleibend hohe Qualität gewährleisten zu können.
+                                                        </h5>
+                                                        @*<p> Open a <a href="#">refund request</a> with us and we can work with you to resolve it ASAP. </p>*@
                                                     </div>
                                                     <div class="text-block">
                                                         <h5>Download</h5>
                                                         <ul>
                                                             <li><a href="#">Analysezertifikat</a></li>
-                                                            <li><a href="#">Dronabinol-Rezepturen</a></li>
+                                                            <li><a href="~/docs/122021/Rezepturherstellung Dronabinol_12-21.pdf" target="_blank">Dronabinol-Rezepturen</a></li>
                                                             <li><a href="#">Sicherheitsdatenblatt</a></li>
-                                                            <li><a href="#">Statement zur Haltbarkeit</a></li>
-                                                            <li><a href="#">Produktblatt</a></li>
-                                                            <li><a href="#">Informationen zum Produkt</a></li>
+                                                            <li><a href="~/docs/122021/Produktblatt Dronabinol_12-21.pdf" target="_blank">Produktblatt</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-3">
                                                     <div class="text-block">
-                                                        <h5>Bestellen Sie über Ihr Warenwirtschaftssystem</h5><br />
-                                                        <ul>
-                                                            <li><a class="btn btn--sm btn--primary-1 type--uppercase" href="@Url.Action("Kontakt","Home")"><span class="btn__text">NOWEDA</span></a></li>
-                                                            <br>
-                                                            <li><a class="btn btn--sm btn--primary-1 type--uppercase" href="@Url.Action("Kontakt","Home")"><span class="btn__text">SANACORP</span></a></li>
-                                                            <br>
-                                                            <li><a class="btn btn--sm btn--primary-1 type--uppercase" href="@Url.Action("Kontakt","Home")"><span class="btn__text">HEALTHCARE ALLIANCE</span></a></li>
-
-                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
@@ -101,61 +119,64 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="tab__title"> <span class="h5">500mg</span> </div>
+                                    <div class="tab__title"> <span class="h5">500 mg</span> </div>
                                     <div class="tab__content">
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col-lg-4">
-                                                    <div class="text-block text-center">
-                                                        <h3><b>500mg Dronabinol</b></h3>
-                                                    </div>
                                                     <div class="col-md-7 col-lg-12">
-                                                        <div class="slider border--round boxed--border" data-timing="5000" data-paging="true" data-arrows="true">
+                                                        <div class="slider border--round boxed--border" data-timing="5000" data-paging="true">
                                                             <ul class="slides">
-                                                                <li> <img alt="Image" src="~/img/Products/Dronabinol-1.jpg"> </li>
-                                                                <li> <img alt="Image" src="~/img/Products/Dronabinol-2.jpg"> </li>
+                                                                <li> <img alt="Image" src="~/img/Product/dronabinol Front all same new.jpg"> </li> 
+                                                                <li> <img alt="Image" src="~/img/Product/dronabinol back 500 sml.jpg"> </li>
+                                                                <li> <img alt="Image" src="~/img/Product/syringe1.jpg"> </li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-5">
                                                     <div class="text-block">
-                                                        <h5>APOCAN 500mg Dronabinol wird in einer Spritze geliefert. </h5>
-                                                        @*<p> Open a <a href="#">refund request</a> with us and we can work with you to resolve it ASAP. </p>*@
+                                                        <h3><b>APOCAN DRONABINOL DAC 500 mg</b></h3>
+                                                        <h3 class="color--googleplus"><b>Erhältlich in Q1 2022</b></h3>
                                                     </div>
                                                     <div class="text-block">
-                                                        @*<h5>Can I pay using AMEX?</h5>*@
                                                         <ul>
-                                                            <li><p><b>PZN:</b> 16767353 </p></li>
-                                                            <li><p><b>Haltbarkeit:</b> 9 Monate </p></li>
-                                                            <li><p><b>Inhalt:</b> 500mg </p></li>
-                                                            <li><p><b>Wirkstoffmenge:</b> 500mg THC </p></li>
+                                                            <li><p><b>PZN:</b> 17866749 </p></li>
+                                                            <li><p><b>Typ:</b> Wirkstoff </p></li>
+                                                            <li><p><b>Wirkstoffmenge:</b> 500 mg (–)-trans-Δ9- Tetrahydrocannabinol </p></li>
+                                                            <li><p><b>Inhalt:</b> Borosilikatglasspritze mit 500 mg Dronabinol, Analysezertifikat </p></li>
+                                                            <li><p><b>Haltbarkeit:</b> ca. 12 Monate </p></li>
+                                                            <li><p><b>Herkunft:</b> Niederlande </p></li>
                                                             <li>&nbsp;</li>
-                                                            <li><p><b>AEK:</b> 00,00€ </p></li>
+                                                            <li><p><b>AEK:</b> siehe Lauer-Taxe </p></li>
                                                         </ul>
+                                                    </div>
+                                                    <div class="text-block">
+                                                        <h5>
+                                                            Das von APOCAN angebotene DAC konforme Dronabinol ist das isolierte Haupt-Cannabinoid aus der Cannabispflanze, Δ9-THC. Die Viskosität des Harzes wird mit Hilfe von Wärme auf ein Niveau gebracht, mit dem sich Dronabinol leicht zu Kapseln, Ölen und ethanolischen Lösungen verarbeiten lässt. Bei der Verarbeitung helfen Ihnen die NRF Vorschriften 22.7. , 22.8. und 22.16..
+                                                            Unser Dronabinol stammt aus den Niederlanden und wird von Experten unter EU-GMP Richtlinien raffiniert und verpackt, um für Sie eine gleichbleibend hohe Qualität gewährleisten zu können.
+                                                        </h5>
+                                                        @*<p> Open a <a href="#">refund request</a> with us and we can work with you to resolve it ASAP. </p>*@
                                                     </div>
                                                     <div class="text-block">
                                                         <h5>Download</h5>
                                                         <ul>
                                                             <li><a href="#">Analysezertifikat</a></li>
-                                                            <li><a href="#">Dronabinol-Rezepturen</a></li>
+                                                            <li><a href="~/docs/122021/Rezepturherstellung Dronabinol_12-21.pdf" target="_blank">Dronabinol-Rezepturen</a></li>
                                                             <li><a href="#">Sicherheitsdatenblatt</a></li>
-                                                            <li><a href="#">Statement zur Haltbarkeit</a></li>
-                                                            <li><a href="#">Produktblatt</a></li>
+                                                            <li><a href="~/docs/122021/Produktblatt Dronabinol_12-21.pdf" target="_blank">Produktblatt</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-3">
                                                     <div class="text-block">
-                                                        <h5>Bestellen Sie über Ihr Warenwirtschaftssystem</h5><br />
-                                                        <ul>
-                                                            <li><a class="btn btn--sm btn--primary-1 type--uppercase" href="@Url.Action("Kontakt","Home")"><span class="btn__text">NOWEDA</span></a></li>
-                                                            <br>
-                                                            <li><a class="btn btn--sm btn--primary-1 type--uppercase" href="@Url.Action("Kontakt","Home")"><span class="btn__text">SANACORP</span></a></li>
-                                                            <br>
-                                                            <li><a class="btn btn--sm btn--primary-1 type--uppercase" href="@Url.Action("Kontakt","Home")"><span class="btn__text">HEALTHCARE ALLIANCE</span></a></li>
-
-                                                        </ul>
+                                                        @*<h5>
+                                                                Bestellen Sie bequem über Ihr Warenwirtschaftssystem. <br>
+                                                            </h5><br />*@
+                                                        @*<ul>
+                                                                <li><img alt="Image" style="width:100px; height: 20px"  src="~/img/Noweda.png"></li>
+                                                                <br>
+                                                            </ul>*@
                                                     </div>
                                                 </div>
                                             </div>
@@ -163,60 +184,69 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="tab__title"> <span class="h5">1000mg</span> </div>
+                                    <div class="tab__title"> <span class="h5">1000 mg</span> </div>
                                     <div class="tab__content">
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col-lg-4">
-                                                    <div class="text-block text-center">
-                                                        <h3><b>1000mg Dronabinol</b></h3>
-                                                    </div>
+                                                    @*<div class="text-block text-center">
+                                                            <h3><b>1000mg Dronabinol</b></h3>
+                                                        </div>*@
                                                     <div class="col-md-7 col-lg-12">
-                                                        <div class="slider border--round boxed--border" data-timing="5000" data-paging="true" data-arrows="true">
+                                                        <div class="slider border--round boxed--border" data-timing="5000" data-paging="true">
                                                             <ul class="slides">
-                                                                <li> <img alt="Image" src="~/img/Products/Dronabinol-1.jpg"> </li>
-                                                                <li> <img alt="Image" src="~/img/Products/Dronabinol-2.jpg"> </li>
+                                                                <li> <img alt="Image" src="~/img/Product/dronabinol Front all same new.jpg"> </li>
+                                                                <li> <img alt="Image" src="~/img/Product/dronabinol back 1000 sml.jpg"> </li>
+                                                                <li> <img alt="Image" src="~/img/Product/syringe1.jpg"> </li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-5">
                                                     <div class="text-block">
-                                                        <h5>APOCAN 1000mg Dronabinol wird in einer Spritze geliefert. </h5>
+                                                        <h3><b>APOCAN DRONABINOL DAC 1000 mg</b></h3>
+                                                        <h3 class="color--googleplus"><b>Erhältlich in Q1 2022</b></h3>
                                                         @*<p> Open a <a href="#">refund request</a> with us and we can work with you to resolve it ASAP. </p>*@
                                                     </div>
                                                     <div class="text-block">
                                                         @*<h5>Can I pay using AMEX?</h5>*@
                                                         <ul>
-                                                            <li><p><b>PZN:</b> 16767353 </p></li>
-                                                            <li><p><b>Haltbarkeit:</b> 9 Monate </p></li>
-                                                            <li><p><b>Inhalt:</b> 1000mg </p></li>
-                                                            <li><p><b>Wirkstoffmenge:</b> 1000mg THC </p></li>
+                                                            <li><p><b>PZN:</b> 17866755 </p></li>
+                                                            <li><p><b>Typ:</b> Wirkstoff </p></li>
+                                                            <li><p><b>Wirkstoffmenge:</b> 1000 mg (–)-trans-Δ9- Tetrahydrocannabinol </p></li>
+                                                            <li><p><b>Inhalt:</b> Borosilikatglasspritze mit 1000 mg Dronabinol, Analysezertifikat</p></li>
+                                                            <li><p><b>Haltbarkeit:</b> ca. 12 Monate </p></li>
+                                                            <li><p><b>Herkunft:</b> Niederlande </p></li>
                                                             <li>&nbsp;</li>
-                                                            <li><p><b>AEK:</b> 00,00€ </p></li>
+                                                            <li><p><b>AEK:</b> siehe Lauer-Taxe </p></li>
                                                         </ul>
+                                                    </div>
+                                                    <div class="text-block">
+                                                        <h5>
+                                                            Das von APOCAN angebotene DAC konforme Dronabinol ist das isolierte Haupt-Cannabinoid aus der Cannabispflanze, Δ9-THC. Die Viskosität des Harzes wird mit Hilfe von Wärme auf ein Niveau gebracht, mit dem sich Dronabinol leicht zu Kapseln, Ölen und ethanolischen Lösungen verarbeiten lässt. Bei der Verarbeitung helfen Ihnen die NRF Vorschriften 22.7. , 22.8. und 22.16..
+                                                            Unser Dronabinol stammt aus den Niederlanden und wird von Experten unter EU-GMP Richtlinien raffiniert und verpackt, um für Sie eine gleichbleibend hohe Qualität gewährleisten zu können.
+                                                        </h5>
+                                                        @*<p> Open a <a href="#">refund request</a> with us and we can work with you to resolve it ASAP. </p>*@
                                                     </div>
                                                     <div class="text-block">
                                                         <h5>Download</h5>
                                                         <ul>
                                                             <li><a href="#">Analysezertifikat</a></li>
-                                                            <li><a href="#">Dronabinol-Rezepturen</a></li>
+                                                            <li><a href="~/docs/122021/Rezepturherstellung Dronabinol_12-21.pdf" target="_blank">Dronabinol-Rezepturen</a></li>
                                                             <li><a href="#">Sicherheitsdatenblatt</a></li>
-                                                            <li><a href="#">Statement zur Haltbarkeit</a></li>
-                                                            <li><a href="#">Produktblatt</a></li>
+                                                            <li><a href="~/docs/122021/Produktblatt Dronabinol_12-21.pdf" target="_blank">Produktblatt</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-3">
                                                     <div class="text-block">
-                                                        <h5>Bestellen Sie über Ihr Warenwirtschaftssystem</h5><br />
-                                                        <ul>
-                                                            <li><a class="btn btn--sm btn--primary-1 type--uppercase" href="@Url.Action("Kontakt","Home")"><span class="btn__text">NOWEDA</span></a></li>
-                                                            <br>
-                                                            <li><a class="btn btn--sm btn--primary-1 type--uppercase" href="@Url.Action("Kontakt","Home")"><span class="btn__text">SANACORP</span></a></li>
-                                                            <br>
-                                                            <li><a class="btn btn--sm btn--primary-1 type--uppercase" href="@Url.Action("Kontakt","Home")"><span class="btn__text">HEALTHCARE ALLIANCE</span></a></li>
-                                                        </ul>
+                                                        @*<h5>
+                                                                Bestellen Sie bequem über Ihr Warenwirtschaftssystem. <br>
+                                                            </h5><br />*@
+                                                        @*<ul>
+                                                                <li><img alt="Image" style="width:100px; height: 20px"  src="~/img/Noweda.png"></li>
+                                                                <br>
+                                                            </ul>*@
                                                     </div>
                                                 </div>
                                             </div>
@@ -229,21 +259,8 @@
                 </div>
             </div>
         </section>
-        <section class="text-center space--xxs bg--primary-1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-lg-6">
-                        <div class="cta">
-                            <h2>Zurück zu Fachbereich</h2> <a class="btn btn--primary type--uppercase" href="@Url.RouteUrl("ProfessionalMain")">
-                                <span class="btn__text">fachbereıch<br></span>
-                            </a>
-                            <p class="type--fine-print">or back to <a href="@Url.RouteUrl("Index")">Main Page</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
+    <script src="~/js/flickity.min.js"></script>
 </body>
 
 </html>

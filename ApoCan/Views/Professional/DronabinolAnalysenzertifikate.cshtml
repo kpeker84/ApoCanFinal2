@@ -1,0 +1,113 @@
+﻿
+@{
+    ViewBag.Title = "APOCAN | Dronabinol Analysenzertifikate";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var variants = ViewBag.variants as List<ItemVariant>;
+    var imageLink = ViewBag.imageLink as string;
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/assets/bootstrap-4.4.1-dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/stack-interface.css" rel="stylesheet" />
+    <link href="~/css/theme-charcoal.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/css/custom.css" rel="stylesheet" />
+    <script src="~/js/jquery-3.1.1.min.js"></script>
+    <script src="~/assets/bootstrap-4.4.1-dist/js/bootstrap.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
+
+</head>
+<body data-smooth-scroll-offset="77">
+    <div class="nav-container"> </div>
+    <div class="main-container">
+        <section class="text-center imagebg section--ken-burns space--md" data-overlay="2">
+            <div class="background-image-holder"> <img alt="background" src="~/img/Search Result Header.jpg"> </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-11">
+                        <h1><br><b>Dronabinol Analysenzertifikate</b></h1>
+                        @*<p class="lead"> Nehmen Sie mit uns Kontakt auf. Wir stehen Ihnen jederzeit für Fragen und Anregungen zu Verfügung. </p>*@
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="text-center cta cta-4 space--xxs border--bottom bg--primary-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12"> <span class="label label--inline bg--primary">SUCHE</span> <span>Zurück zur <a href="@Url.RouteUrl("Analysenzertifikate")">Suche</a></span> </div>
+                </div>
+            </div>
+        </section>
+        <section class="text-justify bg--secondary space--sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-12">
+                        @*<h1>Dronabinol Analysenzertifikate</h1>*@
+                        <p class="lead">Klicken Sie auf die gewünschte Chargennummer um das Analysenzertifikat anzuzeigen</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="space--sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8">
+                        @*<h2>&gt; CH202105040001</h2>*@
+                        <a href="~/docs/Informationen zum Produkt_11-21.pdf" target="_blank"><h2><b>&gt; CH202105040001</b></h2></a>
+                        <p class="lead">Analysenzertifikat – Cannabidiol / 04-05-2021</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="space--sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8">
+                        @*<h2>&gt; CH202105040001</h2>*@
+                        <a href="~/docs/Informationen zum Produkt_11-21.pdf" target="_blank"><h2><b>&gt; CH202105040002</b></h2></a>
+                        <p class="lead">Analysenzertifikat – Cannabidiol / 04-05-2021</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="space--sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8">
+                        @*<h2>&gt; CH202105040001</h2>*@
+                        <a href="~/docs/Informationen zum Produkt_11-21.pdf" target="_blank"><h2><b>&gt; CH202105040003</b></h2></a>
+                        <p class="lead">Analysenzertifikat – Cannabidiol / 04-05-2021</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="space--sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8">
+                        @*<h2>&gt; CH202105040001</h2>*@
+                        <a href="~/docs/Informationen zum Produkt_11-21.pdf" target="_blank"><h2><b>&gt; CH202105040004</b></h2></a>
+                        <p class="lead">Analysenzertifikat – Cannabidiol / 04-05-2021</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        @*<section class="text-center space--xs bg--primary-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-lg-6">
+                        <div class="cta">
+                            <h2>Zurück zur Suche</h2> <a class="btn btn--primary type--uppercase" href="@Url.RouteUrl("Analysenzertifikate")">
+                                <span class="btn__text">Suche<br></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>*@
+    </div>
+</body>

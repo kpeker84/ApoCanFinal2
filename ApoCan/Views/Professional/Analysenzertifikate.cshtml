@@ -1,0 +1,106 @@
+﻿@{
+    ViewBag.Title = "APOCAN | Analysenzertifikate ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/theme-charcoal.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
+
+</head>
+<body data-smooth-scroll-offset="77">
+    <div class="nav-container"> </div>
+    <div class="main-container">
+        <section class="imagebg section--ken-burns space--md text-center" data-overlay="3">
+            <div class="background-image-holder"> <img alt="background" src="~/img/Analysezertifikate Header Image1.jpg"> </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1><b>Analysenzertifikate</b></h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="text-center space--sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-12">
+                        <h2>Klicken Sie auf eine Produktkategorie, um zum Download zu gelangen</h2>
+                        @*<p class="lead"> Drücken Sie auf die gewünschte Chargennummer um das Analysenzertifiakt anzuzeigen </p>*@
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg--secondary space--md">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="feature feature-4 boxed boxed--lg boxed--border">
+                            <i><img alt="Image" width="75" height="75" class="border--round" src="~/img/Icons/cbd.svg"></i>
+                            <h4><b>Cannabidiol</b></h4>
+                            <h5><b> &nbsp</b></h5>
+                            <hr>
+                            <a class="btn btn--primary" href="@Url.RouteUrl("CannabidiolAnalysenzertifikate")">
+                                <span class="btn__text">
+                                    Suchen
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="feature feature-4 boxed boxed--lg boxed--border">
+                            @*<i class="icon icon-Wine-Bottle color--primary"></i>*@
+                            <i><img alt="Image" width="75" height="75" class="border--round" src="~/img/Icons/thc.svg"></i>
+                            <h4><b>Dronabinol</b></h4>
+                            <h5 class="color--primary"><b>Noch nicht vorhanden</b></h5>
+                            <hr>
+                            <a class="btn btn--primary">
+                                <span class="btn__text">
+                                    Suchen
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="feature feature-4 boxed boxed--lg boxed--border">
+                            @*<i><img alt="Image" width="50" height="50" class="border--round box-shadow-wide" src="~/img/Icons/thc.svg"></i>*@
+                            <i><img alt="Image" width="75" height="75" class="border--round" src="~/img/Icons/cannabis-extract.svg"></i>
+                            <h4><b>Extrakte</b></h4>
+                            <h5 class="color--primary"><b>Noch nicht vorhanden</b></h5>
+                            <hr>
+                            <a class="btn btn--primary" >
+                                <span class="btn__text">
+                                    Suchen
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="feature feature-4 boxed boxed--lg boxed--border">
+                            <i><img alt="Image" width="75" height="75" class="border--round" src="~/img/Icons/marijuana-flower.svg"></i>
+                            <h4><b>Blüten</b></h4>
+                            <h5><b> &nbsp</b></h5>
+                            <hr>
+                            <a class="btn btn--primary" href="@Url.RouteUrl("BlutenAnalysenzertifikate")">
+                                <span class="btn__text">
+                                    Suchen
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

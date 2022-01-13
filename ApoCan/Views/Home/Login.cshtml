@@ -18,8 +18,8 @@
 <body data-smooth-scroll-offset="77">
     <div class="nav-container"> </div>
     <div class="main-container">
-        <section class="text-center imagebg section--ken-burns space--md" data-overlay="4">
-            <div class="background-image-holder"> <img alt="background" src="~/img/Hero_unternehmen.jpeg"> </div>
+        <section class="text-center imagebg section--ken-burns space--md" data-overlay="3">
+            <div class="background-image-holder"> <img alt="background" src="~/img/LoginHeader1.jpg"> </div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-10 col-lg-11">
@@ -32,20 +32,26 @@
         <section>
             @if (Session["logged"] == null)
             {
-                <div class="row" style="justify-content:center">
-                    <div>
-                        <iframe style="display:block;min-width:467px" align="middle" frameborder="0" scrolling="no" width="467" height="231" name="dc_login_iframe" id="dc_login_iframe" src="https://login.doccheck.com/code/de/2000000017561/login_xl/"><a href="https://login.doccheck.com/code/de/2000000017561/login_xl/" target="_blank">LOGIN</a></iframe>
+            <div class="row" style="justify-content:center">
+            <div>
+                <iframe style="display:block;min-width:467px" align="middle" frameborder="0" scrolling="no" width="467" height="231" name="dc_login_iframe" id="dc_login_iframe" src="https://login.doccheck.com/code/de/2000000017561/login_xl/"><a href="https://login.doccheck.com/code/de/2000000017561/login_xl/" target="_blank">LOGIN</a></iframe>
 
-                    </div>
+            </div>
+        </div>
+            @*<div class="row" style="justify-content:center">
+                <div>
+                    <iframe style="display:block;min-width:467px" align="middle" frameborder="0" scrolling="no" width="467" height="231" name="dc_login_iframe" id="dc_login_iframe" src="https://login.doccheck.com/code/de/2000000018411/login_xl/"><a href="https://login.doccheck.com/code/de/2000000018411/login_xl/" target="_blank">LOGIN</a></iframe>
+
                 </div>
+            </div>*@
 
             }
             else
             {
-                <div>
-                    <p>You are already logged.</p>
-                    @Html.ActionLink("LogOut", "LogOut", "Home");
-                </div>
+            <div>
+                <p>You are already logged.</p>
+                @Html.ActionLink("LogOut", "LogOut", "Home");
+            </div>
             }
 
 

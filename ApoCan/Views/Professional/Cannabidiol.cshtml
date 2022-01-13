@@ -22,12 +22,19 @@
     <div class="nav-container"> </div>
     <div class="main-container">
         <section class="text-center imagebg section--ken-burns space--md" data-overlay="2">
-            <div class="background-image-holder"> <img alt="background" src="~/img/produkte-1.jpg"> </div>
+            <div class="background-image-holder"> <img alt="background" src="~/img/Service_1.jpeg"> </div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-10 col-lg-11">
                         <h1><b>Cannabidiol</b></h1>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="text-center cta cta-4 space--xxs border--bottom bg--primary-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12"> <span class="label label--inline bg--primary">FACHBEREICH</span> <span>Zurück zur <a href="@Url.RouteUrl("ProfessionalMain")">Übersicht</a></span> </div>
                 </div>
             </div>
         </section>
@@ -38,62 +45,77 @@
                         <div class="tabs-container" data-content-align="left">
                             <ul class="tabs">
                                 <li class="active">
-                                    <div class="tab__title"> <span class="h5">1g</span></div>
+                                    <div class="tab__title"> <span class="h5">1 g</span></div>
                                     <div class="tab__content">
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col-lg-4">
-                                                    <div class="text-block">
+                                                    @*<div class="text-block">
                                                         <h3><b>APOCAN Cannabidiol 1g</b></h3>
-                                                    </div>
+                                                    </div>*@
                                                     <div class="col-md-7 col-lg-12">
-                                                        <div class="slider border--round boxed--border" data-timing="5000" data-paging="true" data-arrows="true">
+                                                        <div class="slider border--round boxed--border" data-timing="5000" data-paging="true">
                                                             <ul class="slides">
-                                                                <li> <img alt="Image" src="~/img/Products/Cannabidiol-1.jpg"> </li>
-                                                                <li> <img alt="Image" src="~/img/Products/Cannabidiol-2.jpg"> </li>
+                                                                <li> <img alt="Image" src="~/img/Product/1g_DUMA_max_dimension smla.jpg"> </li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-5">
                                                     <div class="text-block">
-                                                        <h5>APOCAN Cannabidiol 1g wird in einer 1g Dose geliefert.  </h5>
+                                                        <h3><b>APOCAN CANNABIDIOL DAC 1 g</b></h3>
                                                         @*<p> Open a <a href="#">refund request</a> with us and we can work with you to resolve it ASAP. </p>*@
                                                     </div>
                                                     <div class="text-block">
                                                         @*<h5>Can I pay using AMEX?</h5>*@
                                                         <ul>
-                                                            <li><p><b>PZN:</b> 16767353 </p></li>
-                                                            <li><p><b>Haltbarkeit:</b> 9 Monate </p></li>
-                                                            <li><p><b>Inhalt:</b> 1g </p></li>
-                                                            <li><p><b>Wirkstoffmenge:</b> 1g THC </p></li>
+                                                            <li><p><b>PZN:</b> 17866761 </p></li>
+                                                            <li><p><b>Typ:</b> Wirkstoff </p></li>
+                                                            <li><p><b>Wirkstoffmenge:</b> 1 g (–)-trans-Cannabidiol </p></li>
+                                                            <li><p><b>Inhalt:</b> 1 g Cannabidiol in HDPE Dose, versiegelt </p></li>
+                                                            <li><p><b>Haltbarkeit:</b> ca. 12 Monate </p></li>
+                                                            <li><p><b>Herkunft:</b> Tschechische Republik </p></li>
                                                             <li>&nbsp;</li>
-                                                            <li><p><b>AEK:</b> 00,00€ </p></li>
+                                                            <li><p><b>AEK:</b> siehe Lauer-Taxe </p></li>
                                                         </ul>
+                                                    </div>
+                                                    <div class="text-block">
+                                                        <h5>
+                                                            APOCAN bietet Ihnen ein DAC konformes Cannabidiol höchster Qualität an.
+                                                            Der Wirkstoff ist ein kristallines Pulver, welches bei Temperaturen über 67 Grad Celsius zu schmelzen beginnt. Das so verflüssigte Cannabidiol kann einfach zu Rezepturarzneimitteln verarbeitet werden und versichert eine Reproduzierbarkeit der Wirkung im Sinne des Patienten. Das in der Tschechischen Republik unter EU-GMP-Standards hergestellte Cannabidiol ist in Packungsgrößen von 1g, 5g und 10g verfügbar.
+                                                        </h5>
+                                                        @*<p> Open a <a href="#">refund request</a> with us and we can work with you to resolve it ASAP. </p>*@
                                                     </div>
                                                     <div class="text-block">
                                                         <h5>Download</h5>
                                                         <ul>
-                                                            <li><a href="#">Analysezertifikat</a></li>
-                                                            <li><a href="#">Dronabinol-Rezepturen</a></li>
-                                                            <li><a href="#">Sicherheitsdatenblatt</a></li>
-                                                            <li><a href="#">Statement zur Haltbarkeit</a></li>
-                                                            <li><a href="#">Produktblatt</a></li>
-                                                            <li><a href="#">Informationen zum Produkt</a></li>
+                                                            <li><a href="@Url.RouteUrl("CannabidiolAnalysenzertifikate")">Analysezertifikat</a></li>
+                                                            <li><a href="~/docs/122021/Rezepturherstellung Cannabidiol_12-21.pdf" target="_blank">Cannabidiol-Rezepturen</a></li>
+                                                            <li><a href="~/docs/122021/APOCAN Cannabidiol Sicherheitsdatenblatt.pdf">Sicherheitsdatenblatt</a></li>
+                                                            <li><a href="~/docs/122021/Produktblatt Cannabidiol_12-21.pdf" target="_blank">Produktblatt</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-3">
                                                     <div class="text-block">
-                                                        <h5>Bestellen Sie über Ihr Warenwirtschaftssystem</h5><br />
+                                                        <h5>
+                                                            Bestellen Sie bequem über Ihr Warenwirtschaftssystem bei Ihrer: <br>
+                                                        </h5>
                                                         <ul>
-                                                            <li><a class="btn btn--sm btn--primary-1 type--uppercase" href="@Url.Action("Kontakt","Home")"><span class="btn__text">NOWEDA</span></a></li>
-                                                            <br>
-                                                            <li><a class="btn btn--sm btn--primary-1 type--uppercase" href="@Url.Action("Kontakt","Home")"><span class="btn__text">SANACORP</span></a></li>
-                                                            <br>
-                                                            <li><a class="btn btn--sm btn--primary-1 type--uppercase" href="@Url.Action("Kontakt","Home")"><span class="btn__text">HEALTHCARE ALLIANCE</span></a></li>
-
+                                                            <li><img alt="Image" style="width:100px; height:33px" src="~/img/2560px-NOWEDA_Logo.svg.png"></li>
                                                         </ul>
+                                                        <h5>
+                                                            <br>Jetzt erhältlich bei:
+                                                        </h5>
+                                                        <ul>
+                                                            <li><img alt="Image" style="width:125px; height:20px" src="~/img/Paesel und Lorei.png"></li>
+                                                        </ul>
+                                                        <h5>
+                                                            <br>
+                                                            Tel: +49-2849 9026-0 <br>Fax: +49-2843 9026-218<br>Mail: <a href="mailto:info@paesel-lorei.de" target="_self">info@paesel-lorei.de</a>
+                                                            <br><br> Oder kontaktieren Sie unseren Vertriebsleiter Herrn Sotiriou direkt unter: <br> Tel: +49 201 862811-10 <br>Fax: +49 201 862811-99<br>Mail:
+                                                            <a href="mailto:bestellung@apocan.de" target="_self">bestellung@apocan.de</a>
+                                                        </h5>
                                                     </div>
                                                 </div>
                                             </div>
@@ -101,61 +123,79 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="tab__title"> <span class="h5">5g</span> </div>
+                                    <div class="tab__title"> <span class="h5">5 g</span> </div>
                                     <div class="tab__content">
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col-lg-4">
-                                                    <div class="text-block">
-                                                        <h3><b>APOCAN Cannabidiol 5g</b></h3>
-                                                    </div>
+                                                    @*<div class="text-block">
+                <h3><b>APOCAN Cannabidiol 5g</b></h3>
+            </div>*@
                                                     <div class="col-md-7 col-lg-12">
-                                                        <div class="slider border--round boxed--border" data-timing="5000" data-paging="true" data-arrows="true">
+                                                        <div class="slider border--round boxed--border" data-timing="5000" data-paging="true">
                                                             <ul class="slides">
-                                                                <li> <img alt="Image" src="~/img/Products/Cannabidiol-1.jpg"> </li>
-                                                                <li> <img alt="Image" src="~/img/Products/Cannabidiol-2.jpg"> </li>
+                                                                <li> <img alt="Image" src="~/img/Product/5g_30_ml_DUMA.jpg"> </li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-5">
                                                     <div class="text-block">
-                                                        <h5>APOCAN Cannabidiol 5g wird in einer 5g Dose geliefert.  </h5>
+                                                        <h3>
+                                                            <b>APOCAN CANNABIDIOL DAC 5 g</b>
+                                                        </h3>
                                                         @*<p> Open a <a href="#">refund request</a> with us and we can work with you to resolve it ASAP. </p>*@
                                                     </div>
                                                     <div class="text-block">
                                                         @*<h5>Can I pay using AMEX?</h5>*@
                                                         <ul>
-                                                            <li><p><b>PZN:</b> 16767353 </p></li>
-                                                            <li><p><b>Haltbarkeit:</b> 9 Monate </p></li>
-                                                            <li><p><b>Inhalt:</b> 5g </p></li>
-                                                            <li><p><b>Wirkstoffmenge:</b> 5g THC </p></li>
+                                                            <li><p><b>PZN:</b> 17866778 </p></li>
+                                                            <li><p><b>Typ:</b> Wirkstoff </p></li>
+                                                            <li><p><b>Inhalt:</b> 5 g Cannabidiol in HDPE Dose, versiegelt </p></li>
+                                                            <li><p><b>Wirkstoffmenge:</b> 5 g (–)-trans-Cannabidiol </p></li>
+                                                            <li><p><b>Haltbarkeit:</b> ca. 12 Monate </p></li>
+                                                            <li><p><b>Herkunft:</b> Tschechische Republik </p></li>
                                                             <li>&nbsp;</li>
-                                                            <li><p><b>AEK:</b> 00,00€ </p></li>
+                                                            <li><p><b>AEK:</b> siehe Lauer-Taxe </p></li>
                                                         </ul>
+                                                    </div>
+                                                    <div class="text-block">
+                                                        <h5>
+                                                            APOCAN bietet Ihnen ein DAC konformes Cannabidiol höchster Qualität an.
+                                                            Der Wirkstoff ist ein kristallines Pulver, welches bei Temperaturen über 67 Grad Celsius zu schmelzen beginnt. Das so verflüssigte Cannabidiol kann einfach zu Rezepturarzneimitteln verarbeitet werden und versichert eine Reproduzierbarkeit der Wirkung im Sinne des Patienten. Das in der Tschechischen Republik unter EU-GMP-Standards hergestellte Cannabidiol ist in Packungsgrößen von 1g, 5g und 10g verfügbar.
+                                                        </h5>
+                                                        @*<p> Open a <a href="#">refund request</a> with us and we can work with you to resolve it ASAP. </p>*@
                                                     </div>
                                                     <div class="text-block">
                                                         <h5>Download</h5>
                                                         <ul>
-                                                            <li><a href="#">Analysezertifikat</a></li>
-                                                            <li><a href="#">Dronabinol-Rezepturen</a></li>
-                                                            <li><a href="#">Sicherheitsdatenblatt</a></li>
-                                                            <li><a href="#">Statement zur Haltbarkeit</a></li>
-                                                            <li><a href="#">Produktblatt</a></li>
+                                                            <li><a href="@Url.RouteUrl("CannabidiolAnalysenzertifikate")">Analysezertifikat</a></li>
+                                                            <li><a href="~/docs/122021/Rezepturherstellung Cannabidiol_12-21.pdf" target="_blank">Cannabidiol-Rezepturen</a></li>
+                                                            <li><a href="~/docs/122021/APOCAN Cannabidiol Sicherheitsdatenblatt.pdf">Sicherheitsdatenblatt</a></li>
+                                                            <li><a href="~/docs/122021/Produktblatt Cannabidiol_12-21.pdf" target="_blank">Produktblatt</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-3">
                                                     <div class="text-block">
-                                                        <h5>Bestellen Sie über Ihr Warenwirtschaftssystem</h5><br />
+                                                        <h5>
+                                                            Bestellen Sie bequem über Ihr Warenwirtschaftssystem bei Ihrer: <br>
+                                                        </h5>
                                                         <ul>
-                                                            <li><a class="btn btn--sm btn--primary-1 type--uppercase" href="@Url.Action("Kontakt","Home")"><span class="btn__text">NOWEDA</span></a></li>
-                                                            <br>
-                                                            <li><a class="btn btn--sm btn--primary-1 type--uppercase" href="@Url.Action("Kontakt","Home")"><span class="btn__text">SANACORP</span></a></li>
-                                                            <br>
-                                                            <li><a class="btn btn--sm btn--primary-1 type--uppercase" href="@Url.Action("Kontakt","Home")"><span class="btn__text">HEALTHCARE ALLIANCE</span></a></li>
-
+                                                            <li><img alt="Image" style="width:100px; height:33px" src="~/img/2560px-NOWEDA_Logo.svg.png"></li>
                                                         </ul>
+                                                        <h5>
+                                                            <br>Jetzt erhältlich bei:
+                                                        </h5>
+                                                        <ul>
+                                                            <li><img alt="Image" style="width:125px; height:20px" src="~/img/Paesel und Lorei.png"></li>
+                                                        </ul>
+                                                        <h5>
+                                                            <br>
+                                                            Tel: +49-2849 9026-0 <br>Fax: +49-2843 9026-218<br>Mail: <a href="mailto:info@paesel-lorei.de" target="_self">info@paesel-lorei.de</a>
+                                                            <br><br> Oder kontaktieren Sie unseren Vertriebsleiter Herrn Sotiriou direkt unter: <br> Tel: +49 201 862811-10 <br>Fax: +49 201 862811-99<br>Mail:
+                                                            <a href="mailto:bestellung@apocan.de" target="_self">bestellung@apocan.de</a>
+                                                        </h5>
                                                     </div>
                                                 </div>
                                             </div>
@@ -163,123 +203,77 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="tab__title"> <span class="h5">10g</span> </div>
+                                    <div class="tab__title"> <span class="h5">10 g</span> </div>
                                     <div class="tab__content">
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col-lg-4">
-                                                    <div class="text-block">
-                                                        <h3><b>APOCAN Cannabidiol 10g</b></h3>
-                                                    </div>
+                                                    @*<div class="text-block">
+                <h3><b>APOCAN Cannabidiol 10g</b></h3>
+            </div>*@
                                                     <div class="col-md-7 col-lg-12">
-                                                        <div class="slider border--round boxed--border" data-timing="5000" data-paging="true" data-arrows="true">
+                                                        <div class="slider border--round boxed--border" data-timing="5000" data-paging="true">
                                                             <ul class="slides">
-                                                                <li> <img alt="Image" src="~/img/Products/Cannabidiol-1.jpg"> </li>
-                                                                <li> <img alt="Image" src="~/img/Products/Cannabidiol-2.jpg"> </li>
+                                                                <li> <img alt="Image" src="~/img/Product/10g_30_ml_DUMA.jpg"> </li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-5">
                                                     <div class="text-block">
-                                                        <h5>APOCAN Cannabidiol 10g wird in einer 10g Dose geliefert.  </h5>
+                                                        <h3><b>APOCAN CANNABIDIOL DAC 10 g</b></h3>
                                                         @*<p> Open a <a href="#">refund request</a> with us and we can work with you to resolve it ASAP. </p>*@
                                                     </div>
                                                     <div class="text-block">
                                                         @*<h5>Can I pay using AMEX?</h5>*@
                                                         <ul>
-                                                            <li><p><b>PZN:</b> 16767353 </p></li>
-                                                            <li><p><b>Haltbarkeit:</b> 9 Monate </p></li>
-                                                            <li><p><b>Inhalt:</b> 10g </p></li>
-                                                            <li><p><b>Wirkstoffmenge:</b> 10g THC </p></li>
+                                                            <li><p><b>PZN:</b> 17866784 </p></li>
+                                                            <li><p><b>Typ:</b> Wirkstoff </p></li>
+                                                            <li><p><b>Inhalt:</b> 10 g Cannabidiol in HDPE Dose, versiegelt </p></li>
+                                                            <li><p><b>Wirkstoffmenge:</b> 10 g (–)-trans-Cannabidiol </p></li>
+                                                            <li><p><b>Haltbarkeit:</b> ca. 12 Monate </p></li>
+                                                            <li><p><b>Herkunft:</b> Tschechische Republik </p></li>
                                                             <li>&nbsp;</li>
-                                                            <li><p><b>AEK:</b> 00,00€ </p></li>
+                                                            <li><p><b>AEK:</b> siehe Lauer-Taxe </p></li>
                                                         </ul>
                                                     </div>
                                                     <div class="text-block">
-                                                        <h5>Download</h5>
-                                                        <ul>
-                                                            <li><a href="#">Analysezertifikat</a></li>
-                                                            <li><a href="#">Dronabinol-Rezepturen</a></li>
-                                                            <li><a href="#">Sicherheitsdatenblatt</a></li>
-                                                            <li><a href="#">Statement zur Haltbarkeit</a></li>
-                                                            <li><a href="#">Produktblatt</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-3">
-                                                    <div class="text-block">
-                                                        <h5>Bestellen Sie über Ihr Warenwirtschaftssystem</h5><br />
-                                                        <ul>
-                                                            <li><a class="btn btn--sm btn--primary-1 type--uppercase" href="@Url.Action("Kontakt","Home")"><span class="btn__text">NOWEDA</span></a></li>
-                                                            <br>
-                                                            <li><a class="btn btn--sm btn--primary-1 type--uppercase" href="@Url.Action("Kontakt","Home")"><span class="btn__text">SANACORP</span></a></li>
-                                                            <br>
-                                                            <li><a class="btn btn--sm btn--primary-1 type--uppercase" href="@Url.Action("Kontakt","Home")"><span class="btn__text">HEALTHCARE ALLIANCE</span></a></li>
-
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="tab__title"> <span class="h5">100g</span> </div>
-                                    <div class="tab__content">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-lg-4">
-                                                    <div class="text-block">
-                                                        <h3><b>APOCAN Cannabidiol 100g</b></h3>
-                                                    </div>
-                                                    <div class="col-md-7 col-lg-12">
-                                                        <div class="slider border--round boxed--border" data-timing="5000" data-paging="true" data-arrows="true">
-                                                            <ul class="slides">
-                                                                <li> <img alt="Image" src="~/img/Products/Cannabidiol-1.jpg"> </li>
-                                                                <li> <img alt="Image" src="~/img/Products/Cannabidiol-2.jpg"> </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-5">
-                                                    <div class="text-block">
-                                                        <h5>APOCAN Cannabidiol 100g wird in einer 100g Dose geliefert.  </h5>
+                                                        <h5>
+                                                            APOCAN bietet Ihnen ein DAC konformes Cannabidiol höchster Qualität an.
+                                                            Der Wirkstoff ist ein kristallines Pulver, welches bei Temperaturen über 67 Grad Celsius zu schmelzen beginnt. Das so verflüssigte Cannabidiol kann einfach zu Rezepturarzneimitteln verarbeitet werden und versichert eine Reproduzierbarkeit der Wirkung im Sinne des Patienten. Das in der Tschechischen Republik unter EU-GMP-Standards hergestellte Cannabidiol ist in Packungsgrößen von 1g, 5g und 10g verfügbar.
+                                                        </h5>
                                                         @*<p> Open a <a href="#">refund request</a> with us and we can work with you to resolve it ASAP. </p>*@
                                                     </div>
                                                     <div class="text-block">
-                                                        @*<h5>Can I pay using AMEX?</h5>*@
-                                                        <ul>
-                                                            <li><p><b>PZN:</b> 16767353 </p></li>
-                                                            <li><p><b>Haltbarkeit:</b> 9 Monate </p></li>
-                                                            <li><p><b>Inhalt:</b> 100g </p></li>
-                                                            <li><p><b>Wirkstoffmenge:</b> 100g THC </p></li>
-                                                            <li>&nbsp;</li>
-                                                            <li><p><b>AEK:</b> 00,00€ </p></li>
-                                                        </ul>
-                                                    </div>
-                                                    <div class="text-block">
                                                         <h5>Download</h5>
                                                         <ul>
-                                                            <li><a href="#">Analysezertifikat</a></li>
-                                                            <li><a href="#">Dronabinol-Rezepturen</a></li>
-                                                            <li><a href="#">Sicherheitsdatenblatt</a></li>
-                                                            <li><a href="#">Statement zur Haltbarkeit</a></li>
-                                                            <li><a href="#">Produktblatt</a></li>
+                                                            <li><a href="@Url.RouteUrl("CannabidiolAnalysenzertifikate")">Analysezertifikat</a></li>
+                                                            <li><a href="~/docs/122021/Rezepturherstellung Cannabidiol_12-21.pdf" target="_blank">Cannabidiol-Rezepturen</a></li>
+                                                            <li><a href="~/docs/122021/APOCAN Cannabidiol Sicherheitsdatenblatt.pdf">Sicherheitsdatenblatt</a></li>
+                                                            <li><a href="~/docs/122021/Produktblatt Cannabidiol_12-21.pdf" target="_blank">Produktblatt</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-3">
                                                     <div class="text-block">
-                                                        <h5>Bestellen Sie über Ihr Warenwirtschaftssystem</h5><br />
+                                                        <h5>
+                                                            Bestellen Sie bequem über Ihr Warenwirtschaftssystem bei Ihrer: <br>
+                                                        </h5>
                                                         <ul>
-                                                            <li><a class="btn btn--sm btn--primary-1 type--uppercase" href="@Url.Action("Kontakt","Home")"><span class="btn__text">NOWEDA</span></a></li>
-                                                            <br>
-                                                            <li><a class="btn btn--sm btn--primary-1 type--uppercase" href="@Url.Action("Kontakt","Home")"><span class="btn__text">SANACORP</span></a></li>
-                                                            <br>
-                                                            <li><a class="btn btn--sm btn--primary-1 type--uppercase" href="@Url.Action("Kontakt","Home")"><span class="btn__text">HEALTHCARE ALLIANCE</span></a></li>
-
+                                                            <li><img alt="Image" style="width:100px; height:33px" src="~/img/2560px-NOWEDA_Logo.svg.png"></li>
                                                         </ul>
+                                                        <h5>
+                                                            <br>Jetzt erhältlich bei:
+                                                        </h5>
+                                                        <ul>
+                                                            <li><img alt="Image" style="width:125px; height:20px" src="~/img/Paesel und Lorei.png"></li>
+                                                        </ul>
+                                                        <h5>
+                                                            <br>
+                                                            Tel: +49-2849 9026-0 <br>Fax: +49-2843 9026-218<br>Mail: <a href="mailto:info@paesel-lorei.de" target="_self">info@paesel-lorei.de</a>
+                                                            <br><br> Oder kontaktieren Sie unseren Vertriebsleiter Herrn Sotiriou direkt unter: <br> Tel: +49 201 862811-10 <br>Fax: +49 201 862811-99<br>Mail: 
+                                                            <a href="mailto:bestellung@apocan.de" target="_self">bestellung@apocan.de</a>
+                                                        </h5>
                                                     </div>
                                                 </div>
                                             </div>
@@ -287,20 +281,6 @@
                                     </div>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="text-center space--xxs bg--primary-1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-lg-6">
-                        <div class="cta">
-                            <h2>Zurück zu Fachbereich</h2> <a class="btn btn--primary type--uppercase" href="@Url.RouteUrl("ProfessionalMain")">
-                                <span class="btn__text">fachbereıch<br></span>
-                            </a>
-                            <p class="type--fine-print">or back to <a href="@Url.RouteUrl("Index")">Main Page</a></p>
                         </div>
                     </div>
                 </div>

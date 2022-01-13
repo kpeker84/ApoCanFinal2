@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8">
     <title>@ViewBag.Title</title>
-    <link rel="shortcut icon" type="image/jpg" href="~/img/GS_Group_Logo.png" />
+    <link rel="shortcut icon" type="image/jpg" href="~/img/APOCAN-Leaf.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="~/css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
     <link href="~/css/socicon.css" rel="stylesheet" type="text/css" media="all" />
@@ -35,28 +35,15 @@
             background-color: white;
         }
     </style>
-    @*<script>
-            $(document).ready(function () {
-                // Add smooth scrolling to all links
-                $("a").on('click', function (event) {
-                    // Make sure this.hash has a value before overriding default behavior
-                    if (this.hash !== "") {
-                        // Prevent default anchor click behavior
-                        event.preventDefault();
-                        // Store hash
-                        var hash = this.hash;
-                        // Using jQuery's animate() method to add smooth page scroll
-                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                        $('html, body').animate({
-                            scrollTop: $(hash).offset().top
-                        }, 800, function () {
-                            // Add hash (#) to URL when done scrolling (default click behavior)
-                            window.location.hash = hash;
-                        });
-                    } // End if
-                });
-            });
-        </script>*@
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-T7HLJ30ZDQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-T7HLJ30ZDQ');
+    </script>
 </head>
 <body data-smooth-scroll-offset="77">
     <div class="nav-container sticky">
@@ -73,7 +60,7 @@
                     </div>
                 </div>
             </div>
-            <nav id="menu1" class="bar bar-1 hidden-xs bar--transparent bar--absolute"  data-scroll-class="20vh:pos-fixed"> 
+            <nav id="menu1" class="bar bar-1 hidden-xs bar--transparent bar--absolute"  data-scroll-class="5vh:pos-fixed"> 
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-1 col-md-2 hidden-xs">
@@ -85,13 +72,13 @@
                         <div class="col-lg-11 text-right text-left-xs text-left-sm col-md-12">
                             <div class="bar__module">
                                 <ul class="menu-horizontal text-left">
-                                    @*<li> <a href="    ">Unternehmen</a> </li>*@
-                                    <li> <a href="@Url.RouteUrl("Unsereprodukte")">Produkte</a> </li>
-                                    @*<li> <a href="@Url.RouteUrl("Service")">Service</a> </li>*@
-                                    <li> <a href="@Url.RouteUrl("Presse")">Presse</a> </li>
+                                    <li><a href="~/#uberuns">Über Uns</a></li>
+                                    <li><a href="~/#cannabis">Cannabis</a></li>
+                                    <li><a href="~/#service">Service</a></li>
+                                    <li><a href="@Url.RouteUrl("Analysenzertifikate")">Analysenzertifikate</a></li>
+                                    <li> <a href="@Url.RouteUrl("Faq")">FAQ</a> </li>
                                     @if (Session["logged"] != null)
                                     {
-                                        <li> <a href="@Url.RouteUrl("Faq")">FAQ</a> </li>
                                         <li> <a href="@Url.RouteUrl("ProfessionalMain")">Fachbereich</a> </li>
                                     }
                                 </ul>
@@ -99,7 +86,7 @@
                             <div class="bar__module">
                                 @if (Session["logged"] == null)
                                 {
-                                    <a class="btn btn--sm type--uppercase" href="@Url.RouteUrl("Login")">
+                                    <a class="btn btn--sm btn--primary type--uppercase" href="@Url.RouteUrl("Login")">
                                         <span class="btn__text">
                                             DOCCHECK
                                         </span>
@@ -115,7 +102,7 @@
 
                                 }
 
-                                <a class="btn btn--sm btn--primary type--uppercase" href="@Url.Action("Kontakt","Home")">
+                                <a class="btn btn--sm type--uppercase" href="@Url.Action("Kontakt","Home")">
                                     <span class="btn__text">
                                         KONTAKT
                                     </span>
@@ -147,36 +134,28 @@
         <footer class="space--xxs footer-2 bg--primary text-center">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6 col-md-4 col-xs-6">
+                    <div class="col-sm-6 col-md-6 col-xs-6">
                         <span><h6>LINKS&nbsp;</h6></span>
                         <ul class="list--hover">
                             <li><a href="@Url.RouteUrl("Impressum")">Impressum</a></li>
-                            <li><a>AGBs</a></li>
                             <li><a href="@Url.RouteUrl("Datenschutz")">Datenschutz</a></li>
                         </ul>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-xs-6">
-                        <span><h6>&nbsp;&nbsp;KONTAKT</h6></span>
+                    <div class="col-sm-6 col-md-6 col-xs-6">
+                        <span><h6>&nbsp;&nbsp;&nbsp;&nbsp;KONTAKT</h6></span>
                         <ul class="list--hover">
-                            <li><a>Mo. – Fr. 09:00 – 18:00&nbsp;<br></a></li>
-                            <li><a>030 / 548 446 15&nbsp;&nbsp;<br></a></li>
-                            <li><a>info@apocan.de&nbsp; &nbsp;<br></a></li>
+                            <li><a>&nbsp;&nbsp;&nbsp;&nbsp;Mo. – Fr. 09:00 – 17:00&nbsp;<br></a></li>
+                            <li><a>&nbsp;&nbsp;&nbsp;&nbsp;+49 (0)201 8628 11-0&nbsp;&nbsp;<br></a></li>
+                            <li><a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;info@apocan.de&nbsp; &nbsp;<br></a></li>
                         </ul>
                     </div>
-                    <div class="col-sm-6 col-md-4 col-xs-6">
-                        <span><h6>ADRESSE&nbsp;</h6></span>
+                    @*<div class="col-sm-6 col-md-4 col-xs-6">
+                        <span><h6>BESTELLUNG&nbsp;</h6></span>
                         <ul class="list--hover">
-                            <li><a>APOCAN GmbH&nbsp;<br></a></li>
-                            <li><a>Heinrich-Strunk-Str. 77&nbsp;<br></a></li>
-                            <li><a>45143 Essen&nbsp;&nbsp;<br></a></li>
-                            @*<li>
-                        <a>
-                            www.greenstein.co
-                            <br>&nbsp;<br>
-                        </a>
-                    </li>*@
+                            <li><a>Jetzt über Ihr&nbsp;<br></a></li>
+                            <li><a>Warenwirtschaftssystem&nbsp;<br></a></li>
                         </ul>
-                    </div>
+                    </div>*@
                     @*<div class="col-sm-6 col-md-3 col-xs-6">
                 <h6 class="type--uppercase">Mitgliedschaften</h6>
                 <ul class="list--hover">
@@ -226,7 +205,7 @@
     </div>
     <script src="~/js/jquery-3.1.1.min.js"></script>
     <script src="~/js/parallax.js"></script>
-    <script src="~/js/smooth-scroll.min.js"></script>
+    @*<script src="~/js/smooth-scroll.min.js"></script>*@
     <script src="~/js/scripts.js"></script>
     <script src="~/js/flickity.min.js"></script>
 

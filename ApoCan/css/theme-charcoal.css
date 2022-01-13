@@ -1520,15 +1520,15 @@ div.recaptcha iframe {
   -moz-transition: 0.3s linear;
 }
 .accordion li .accordion__title {
-  cursor: pointer;
-  padding: 0.46428571em 0.92857143em;
-  border: 1px solid #ececec;
-  border-bottom: none;
-  background: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    cursor: pointer;
+    padding: 0.46428571em 0.92857143em;
+    border: 1px solid #ececec;
+    border-bottom: none;
+    background: #2374ab;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .accordion li:last-child .accordion__title {
   border-bottom: 1px solid #ececec;
@@ -1685,6 +1685,7 @@ img + .boxed {
 .slides:not(.flickity-enabled) li.imagebg:first-child .container {
   opacity: 0;
 }
+
 @keyframes backgroundLoad {
   0% {
     background: #252525;

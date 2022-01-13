@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewBag.Title = "APOCAN | Suchen";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@*<center>
+        <label>Product Check</label>
+        <input type="text" id="productCode" placeholder="Please enter product code" />
+        <button onclick="checkProduct()">Click</button>
+        <br />
+        <br />
+    </center>*@
+
+<section class="imagebg section--ken-burns space--md text-center" data-overlay="3">
+    <div class="background-image-holder"> <img alt="background" src="~/img/Analysezertifikate Header Image1.jpg"> </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1><b>Analysezertifikate</b></h1>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg--secondary space--xs text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-12">
+                <h2><b>Bitte geben Sie hier die Chargennummer des Produkts ein</b></h2>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="text-center bg--secondary space--sm">
+    <div class="row justify-content-center no-gutters">
+        <div class="col-md-10 col-lg-8">
+            <div class="boxed boxed--border">
+                <form class="text-center row mx-0">
+                    <div class="col-md-6"> <span> Chargennummer :</span> <input type="text" id="productCode">  </div>
+                    @*<div class="col-md-12 boxed"> </div>*@
+                    @*<button onclick="checkProduct()">Click</button>*@
+                </form>
+            </div>
+            <button onclick="checkProduct()" class="btn btn--primary type--uppercase"> Suchen </button>
+        </div>
+    </div>
+</section>
+
+
+
+
+<script>
+    var productCode;
+    var partialField = document.getElementById("innerPartial");
+    function checkProduct() {
+        productCode = document.getElementById("productCode").value;
+        console.log(productCode);
+        window.location.href = `${window.location.protocol}//${window.location.host}/Professional/ProductResult?number=${productCode}`;
+    }
+</script>
+

@@ -1,0 +1,164 @@
+﻿@model ErpProductDTO
+@{
+    ViewBag.Title = "APOCAN | Product Result";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var variants = ViewBag.variants as List<ItemVariant>;
+    var imageLink = ViewBag.imageLink as string;
+}
+
+@*<div style="margin-top:200px">
+
+        <label>@Model.displayName</label>
+        <br />
+        <label>IMAGE</label>
+        <br />
+        <img src="@imageLink" style="max-width:300px;max-height:600px">
+        <b>Properties</b>
+
+        @foreach (var item in variants)
+        {
+            <div class="row">
+                <label>@item.code</label>:  <label>@item.description</label>
+            </div>
+        }
+    </div>*@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/assets/bootstrap-4.4.1-dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/stack-interface.css" rel="stylesheet" />
+    <link href="~/css/theme-charcoal.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/css/custom.css" rel="stylesheet" />
+    <script src="~/js/jquery-3.1.1.min.js"></script>
+    <script src="~/assets/bootstrap-4.4.1-dist/js/bootstrap.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
+
+</head>
+<body data-smooth-scroll-offset="77">
+    <div class="nav-container"> </div>
+    <div class="main-container">
+        <!--<section class="text-center bg--primary space--sm ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8">-->
+                        @*<h1><br><b>@Model.displayName</b></h1>*@
+                        <!--<h2><br><b>APOCAN DRONABINOL DAC 500mg </b></h2>-->
+                        @*<p class="lead"> Nehmen Sie mit uns Kontakt auf. Wir stehen Ihnen jederzeit für Fragen und Anregungen zu Verfügung </p>*@
+                    <!--</div>
+                </div>
+            </div>
+        </section>-->
+        <section class="text-center imagebg section--ken-burns space--md" data-overlay="2">
+            <div class="background-image-holder"> <img alt="background" src="~/img/Search Result Header.jpg"> </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-11">
+                        <h1><br><b>APOCAN DRONABINOL DAC 500mg </b></h1>
+                        @*<p class="lead"> Nehmen Sie mit uns Kontakt auf. Wir stehen Ihnen jederzeit für Fragen und Anregungen zu Verfügung. </p>*@
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="text-center space--xs bg--secondary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-lg-6">
+                        <div class="cta">
+                            <h2>Das Analysezertifikat zum Download:</h2>
+                            <a class="btn btn--primary type--uppercase" href="~/docs/Plausibilitätsprüfung.pdf" target="_blank">
+                                <span class="btn__text">Analysezertifikat_75937564<br></span>
+                            </a>
+                            @*<p class="type--fine-print">or back to <a href="@Url.RouteUrl("Index")">Main Page</a></p>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="space--sm">
+            <div class="container">
+                <div class="row justify-content-around">
+                    <div class="col-md-7 col-lg-6">
+                        <div class="slider border--round boxed--border" data-timing="false" data-arrows="true" data-paging="true">
+                            <img alt="Image" width="400" height="250" src="~/img/Product/Dronabinol Front all same sml.jpg">
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-lg-4">
+                        @*<h4>Das Analysezertifikat zum Download:</h4>*@
+                        @*<a href="~/docs/Plausibilitätsprüfung.pdf" target="_blank">Analysezertifikat_75937564</a><br><br>*@
+                        @*<div class="text-block"> <span class="h4 type--strikethrough inline-block">$@Html.Raw(Model.Price + 2)</span> <span class="h4 inline-block">@Model.Price</span> </div>*@
+                        @*<div class="text-block"> <span class="h4  inline-block">AEK :</span> <span class="h4 inline-block">10.00</span> </div>*@
+                        @*<p> @Model.displayName </p>*@
+                        <div>
+                            @foreach (var item in variants)
+                            {
+                                <div class="row">
+                                    <h4><label><b>@item.code </b></label></h4>:  <h4><label>@item.description</label></h4><br>
+                                </div>
+                            }
+                        </div>
+                        @*<ul class="accordion accordion-2">
+                        <li class="active">
+                            <div class="accordion__title"> <span class="h4">Specifications</span> </div>
+                            <div class="accordion__content">
+                                <ul>
+                                    <li>
+                                        <span>
+                                            @foreach (var item in variants)
+                                            {
+                                                <div class="row">
+                                                    <label><b>@item.code </b></label>:  <label>@item.description</label><br>
+                                                </div>
+                                            }
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>*@
+                        @*<li class="active">
+                            <div class="accordion__content">
+                                <ul>
+                                    <li><span>Product: 3.5”W X 3.0”H X 3.0”D</span></li>
+                                    <li><span>Packaging: 7”W X 6”H X 5”D </span></li>
+                                </ul>
+                            </div>
+                        </li>*@
+                        @*<li class="active">
+                            <div class="accordion__title"> <span class="h5">Shipping Info</span> </div>
+                            <div class="accordion__content">
+                                <p> Generally ships between 2 - 4 working days from order confirmation. Orders only confirmed once payment has successfully processed. NOTE: When using services such as Skrill, payments can take longer to process (approx. 4 days). </p>
+                            </div>
+                        </li>*@
+                        @*<div class="row">
+                            <input type="number" id="productAmount" min="1" style="width:70px;height:45px" value="1" required />
+                        </div>
+                        <div class="row">
+                            <button class="btn btn--primary" style="min-width:100px;margin-top:15px" onclick="sendToCart(@Model.ID)">Add To Cart</button>
+                        </div>*@
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="text-center space--xs bg--primary-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-lg-6">
+                        <div class="cta">
+                            <h2>Zurück zur Suche</h2> <a class="btn btn--primary type--uppercase" href="@Url.RouteUrl("ProductSearch")">
+                                <span class="btn__text">Suche<br></span>
+                            </a>
+                            @*<p class="type--fine-print">or back to <a href="@Url.RouteUrl("Index")">Main Page</a></p>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>

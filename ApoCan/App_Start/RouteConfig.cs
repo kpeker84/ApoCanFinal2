@@ -32,6 +32,12 @@ namespace ApoCan
             routes.MapRoute("Unternehmen", "Unternehmen", new { controller = "Home", action = "Unternehmen", id = UrlParameter.Optional });
             routes.MapRoute("Service", "Service", new { controller = "Home", action = "Service", id = UrlParameter.Optional });
             routes.MapRoute("Presse", "Presse", new { controller = "Home", action = "Presse", id = UrlParameter.Optional });
+            routes.MapRoute("ProductSearch", "ProductSearch", new { controller = "Professional", action = "ProductSearch", id = UrlParameter.Optional });
+            routes.MapRoute("Analysenzertifikate", "Analysenzertifikate", new { controller = "Professional", action = "Analysenzertifikate", id = UrlParameter.Optional });
+            routes.MapRoute("CannabidiolAnalysenzertifikate", "CannabidiolAnalysenzertifikate", new { controller = "Professional", action = "CannabidiolAnalysenzertifikate", id = UrlParameter.Optional });
+            routes.MapRoute("DronabinolAnalysenzertifikate", "DronabinolAnalysenzertifikate", new { controller = "Professional", action = "DronabinolAnalysenzertifikate", id = UrlParameter.Optional });
+            routes.MapRoute("ExtrakteAnalysenzertifikate", "ExtrakteAnalysenzertifikate", new { controller = "Professional", action = "ExtrakteAnalysenzertifikate", id = UrlParameter.Optional });
+            routes.MapRoute("BlutenAnalysenzertifikate", "BlutenAnalysenzertifikate", new { controller = "Professional", action = "BlutenAnalysenzertifikate", id = UrlParameter.Optional });
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
