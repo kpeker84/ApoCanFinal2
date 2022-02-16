@@ -1524,7 +1524,8 @@ div.recaptcha iframe {
     padding: 0.46428571em 0.92857143em;
     border: 1px solid #ececec;
     border-bottom: none;
-    background: #2374ab;
+    /*background: #2374ab;*/
+    background: #c6ecf3;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
