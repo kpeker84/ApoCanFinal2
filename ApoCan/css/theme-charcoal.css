@@ -3223,7 +3223,7 @@ form[action*='list-manage.com'] .small-meta {
 .bar:not(.bg--dark):not(.bar--transparent) .logo-light {
   display: none;
 }
-@media all and (max-width: 767px) {
+@media all and (max-width: 1200px) {
   .bar.bar--mobile-sticky[data-scroll-class*='fixed'].pos-fixed {
     position: fixed;
     width: 100%;
@@ -3238,7 +3238,7 @@ form[action*='list-manage.com'] .small-meta {
     z-index: 999;
   }
 }
-@media all and (min-width: 991px) {
+@media all and (min-width: 1201px) {
   .bar__module:not(:only-child) {
     display: inline-block;
   }
@@ -3295,7 +3295,7 @@ form[action*='list-manage.com'] .small-meta {
     background: #252525;
   }
 }
-@media all and (max-width: 767px) {
+@media all and (max-width: 1201px) {
   .bar__module {
     margin-bottom: 0.92857143em;
   }
@@ -3337,7 +3337,7 @@ form[action*='list-manage.com'] .small-meta {
 .page-navigator ul li:not(:last-child) {
   margin-bottom: 1.85714286em;
 }
-@media all and (max-width: 767px) {
+@media all and (max-width: 1201px) {
   .page-navigator {
     right: 0;
   }
@@ -4865,7 +4865,7 @@ section.parallax .row .background-image-holder {
 .visible-lg-inline-block {
   display: none !important;
 }
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
   .visible-xs {
     display: block !important;
   }
@@ -4985,7 +4985,7 @@ section.parallax .row .background-image-holder {
     display: inline-block !important;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
   .hidden-xs {
     display: none !important;
   }
