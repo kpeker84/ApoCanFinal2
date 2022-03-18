@@ -501,6 +501,8 @@
     <Content Include="docs\022022\Phytocannabinoide_02-22.pdf" />
     <Content Include="docs\022022\Informationen zum Produkt_02-22.pdf" />
     <Content Include="docs\022022\Medizinalcannabis in der Apothekenpraxis.pdf" />
+    <Content Include="docs\032022\APOCAN Produktübersicht_03-22.pdf" />
+    <Content Include="docs\032022\Informationen zum Produkt_03_22.pdf" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.5.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.5.1.js" />
