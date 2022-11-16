@@ -365,6 +365,7 @@
     <Content Include="js\flickity.min.js" />
     <Content Include="js\granim.min.js" />
     <Content Include="js\isotope.min.js" />
+    <Content Include="js\jquery.min.js" />
     <Content Include="js\search.js" />
     <Content Include="js\jquery-3.1.1.min.js" />
     <Content Include="js\jquery.steps.min.js" />
@@ -537,6 +538,9 @@
     <Content Include="docs\Analysenzertifikat\Bluten\CoA APOCAN NATURAL GG 22_1 CAN FLOS IND CA, Ch. GG4 220403_25.05.2022.pdf" />
     <Content Include="docs\Analysenzertifikat\Bluten\CoA Apocan Ch. GG4220606Z.pdf" />
     <Content Include="docs\Analysenzertifikat\Bluten\CoA GG4 2204 03 Apocan.pdf" />
+    <Content Include="docs\052022\Rezepturherstellung von cannabinoidhaltigen Arzneimitteln_02-22.pdf" />
+    <Content Include="docs\Analysenzertifikat\Bluten\CoA Apocan Ch.B. GG4220707.pdf" />
+    <Content Include="docs\102022\BESTELLFORMULAR APOCAN 10_22.pdf" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.5.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.5.1.js" />
