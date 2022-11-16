@@ -206,6 +206,7 @@
     <Content Include="css\font-robotoslab.css" />
     <Content Include="css\font-rubiklato.css" />
     <Content Include="css\font-sourcesanspro.css" />
+    <Content Include="css\google-fonts.css" />
     <Content Include="css\iconsmind.css" />
     <Content Include="css\jquery.steps.css" />
     <Content Include="css\lightbox.min.css" />
